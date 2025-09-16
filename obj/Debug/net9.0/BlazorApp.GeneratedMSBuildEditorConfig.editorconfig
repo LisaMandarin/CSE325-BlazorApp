@@ -1,0 +1,57 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BlazorApp
+build_property.RootNamespace = BlazorApp
+build_property.ProjectDir = /Users/lisachuang/Documents/BYUI/CSharp-practice/0917/BlazorApp/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/lisachuang/Documents/BYUI/CSharp-practice/0917/BlazorApp
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[/Users/lisachuang/Documents/BYUI/CSharp-practice/0917/BlazorApp/BlazorApp/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Qmxhem9yQXBwL0NvbXBvbmVudHMvQXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/lisachuang/Documents/BYUI/CSharp-practice/0917/BlazorApp/BlazorApp/Components/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = Qmxhem9yQXBwL0NvbXBvbmVudHMvUGFnZXMvQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/lisachuang/Documents/BYUI/CSharp-practice/0917/BlazorApp/BlazorApp/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Qmxhem9yQXBwL0NvbXBvbmVudHMvUGFnZXMvRXJyb3IucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/lisachuang/Documents/BYUI/CSharp-practice/0917/BlazorApp/BlazorApp/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Qmxhem9yQXBwL0NvbXBvbmVudHMvUGFnZXMvSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/lisachuang/Documents/BYUI/CSharp-practice/0917/BlazorApp/BlazorApp/Components/Pages/Weather.razor]
+build_metadata.AdditionalFiles.TargetPath = Qmxhem9yQXBwL0NvbXBvbmVudHMvUGFnZXMvV2VhdGhlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/lisachuang/Documents/BYUI/CSharp-practice/0917/BlazorApp/BlazorApp/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Qmxhem9yQXBwL0NvbXBvbmVudHMvUm91dGVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/lisachuang/Documents/BYUI/CSharp-practice/0917/BlazorApp/BlazorApp/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Qmxhem9yQXBwL0NvbXBvbmVudHMvX0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/lisachuang/Documents/BYUI/CSharp-practice/0917/BlazorApp/BlazorApp/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Qmxhem9yQXBwL0NvbXBvbmVudHMvTGF5b3V0L01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-qwzxwqrc64
+
+[/Users/lisachuang/Documents/BYUI/CSharp-practice/0917/BlazorApp/BlazorApp/Components/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Qmxhem9yQXBwL0NvbXBvbmVudHMvTGF5b3V0L05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-vznv3xpssg
