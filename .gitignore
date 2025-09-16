@@ -1,0 +1,86 @@
+# --- Build outputs (dotnet) ---
+[Bb]in/
+[Oo]bj/
+out/
+artifacts/
+
+# --- IDEs / tooling ---
+.vs/                     # Visual Studio
+.idea/                   # Rider
+_ReSharper*/
+*.DotSettings.user
+*.sln.iml
+
+# VS Code: keep common project files, ignore the rest
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# --- User-specific / temp files ---
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.tmp
+*.temp
+*.pidb
+*.svclog
+
+# --- Logs ---
+*.log
+Logs/
+
+# --- NuGet packages ---
+*.nupkg
+*.snupkg
+# packages/                # (legacy, uncomment if your solution uses a local packages folder)
+
+# --- Publish profiles (often contain machine-specific settings) ---
+**/Properties/PublishProfiles/*.pubxml
+**/Properties/PublishProfiles/*.pubxml.user
+*.publishsettings
+
+# --- Node / front-end tooling (Tailwind, etc.) ---
+node_modules/
+dist/
+.cache/
+.build/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# --- Certificates / keys ---
+*.pfx
+*.p12
+*.snk
+
+# --- Test & coverage ---
+TestResults/
+*.coverage
+*.coveragexml
+coverage/
+coverage.cobertura.xml
+
+# --- Optional local-only config (uncomment if you create these) ---
+# appsettings.Development.json
+appsettings.*.local.json
+
+# --- SQLite dev DBs (uncomment if you don't want them in git) ---
+# *.db
+# *.sqlite
+# *.sqlite3
+
+# --- LibMan restored libraries (optional: ignore if you restore at build) ---
+# wwwroot/lib/
+
+# --- Azure Functions local settings (harmless if not used) ---
+local.settings.json
