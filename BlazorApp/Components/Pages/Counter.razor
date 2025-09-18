@@ -1,4 +1,7 @@
 ﻿@page "/counter"
+@page "/counter2"
+@page "/counter/{initialCount:int}"
+
 @rendermode InteractiveServer
 
 <PageTitle>Counter</PageTitle>
@@ -6,8 +9,18 @@
 <h1>Counter</h1>
 
 <p role="status">Current count: @currentCount</p>
+<p>Initial count: @InitialCount</p>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<button class="btn btn-primary" @onclick="IncrementCountAsync">Click me</button>
+<div>
+    <input @onchange="OnChange" />
+    <p>@text1</p>
+</div>
+<div>
+    <input @oninput="OnInput" />
+    <p>@text2</p>
+</div>
+
 
 @if (currentCount > 3) {
 <p>You win!</p>
@@ -17,13 +30,50 @@
 <li>Clicked</li>
 }
 </ul>
+
+<div style="background-color: aqua; min-height: 60px;" @onmouseout="OnMouseOut" @onmouseover="OnMouseOver">@divText</div>
+
+<MyButton OnClick="IncrementCount">My Button</MyButton>
+<input @bind="@text3" @bind:event="oninput" @bind:after="Search"/>
+<button @onclick="OnInputClick">Clear</button>
+<p>@text3</p>
+<p>@searchText</p>
+
 @code {
     private int currentCount = 0;
+    string text1 = "";
+    string text2 = "";
+    string divText = "";
+    string text3 = "";
+    string searchText = "";
+
+    protected override void OnInitialized()
+    {
+        currentCount = InitialCount ?? 0;
+    }
 
     [Parameter]
-    public int incrementAmount {get; set;}= 1;
+    public int IncrementAmount {get; set;}= 1;
+    [Parameter]
+    public int? InitialCount {get; set;}
     private void IncrementCount()
     {
-        currentCount += incrementAmount;
+        currentCount += IncrementAmount;
+    }
+
+    async Task IncrementCountAsync() {
+        await Task.Delay(1000);
+        currentCount++;
+    }
+    private void OnChange(ChangeEventArgs args) => text1 = (string)args.Value!;
+    private void OnInput(ChangeEventArgs args) => text2 = (string)args.Value!;
+    private void OnMouseOut(MouseEventArgs args) => divText = "Mouse Out";
+    private void OnMouseOver(MouseEventArgs args) => divText = "Mouse Over";
+
+    private void OnInputClick(MouseEventArgs args) => text3 = "";
+    async Task Search() {
+        searchText = "Searching...";
+        await Task.Delay(2000);
+        searchText = $"Found {Random.Shared.Next()} result";
     }
 }
